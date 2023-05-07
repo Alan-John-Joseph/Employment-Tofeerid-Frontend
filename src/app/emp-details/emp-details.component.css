@@ -1,0 +1,63 @@
+.viewmain {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    overflow-y: scroll;
+    color: #41485F;
+}
+
+.editmain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editmain>h1 {
+    font-size: 48px;
+    margin: 0px 0px 50px;
+}
+
+.editmain>h5 {
+    font-size: 36px;
+    margin: 0px 0px 24px;
+}
+
+.employee {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee .avatar {
+    width: 98px;
+    height: 98px;
+}
+
+.employee .emp-data {
+    font-size: 36px;
+    width: 300px;
+    text-align: center;
+    padding: 5px;
+}
+
+.edit-button-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.edit-button-container button {
+    background-color: transparent;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.edit-button-container button span {
+    color: #556080;
+    font-size: 60px;
+    font-weight: bold;
+}

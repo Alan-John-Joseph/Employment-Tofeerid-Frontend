@@ -1,0 +1,70 @@
+.homemain {
+    height: 100%;
+}
+
+.search-container {
+    text-align: right;
+    padding: 10px 40px;
+    height: 60px;
+}
+
+.search-container>.search {
+    font-size: 28px;
+    border-radius: 20px;
+    padding: 10px 28px;
+    background-color: #D9D9D9;
+    color: #969799;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+}
+
+.employee {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    font-size: 26px;
+    color: #41485F;
+    padding: 10px;
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+}
+
+.employee .emp-data {
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.employee .emp-data:hover {
+    box-shadow: 0 0 4px 1px;
+    border-radius: 5px;
+}
+
+.employee .avatar {
+    width: 98px;
+    height: 98px;
+}
+
+.employee .name {
+    margin: 0;
+}
+
+.addbutton-container {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.addbutton-container button {
+    background-color: #556080;
+    margin: 10px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.addbutton-container button span{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;   
+}

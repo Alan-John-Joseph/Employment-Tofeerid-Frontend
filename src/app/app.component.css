@@ -1,0 +1,20 @@
+.main-header {
+  width: 100%;
+  height: 100vh;
+}
+
+.empheader {
+  width: 100%;
+  height: 200px;
+  background-image: url("../assets/TopHeader.jpg");
+  color: rgb(252, 251, 251);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  height: calc(100vh - 200px);
+  background-color: #E6FAFC;
+  position: relative;
+}

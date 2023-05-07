@@ -1,0 +1,33 @@
+<div class="viewmain"
+     *ngIf="empdetails$|async as empdetails">
+    <div class="editmain">
+        <h1>Name: {{empdetails.empFirstName}} {{empdetails.empLastName}}</h1>
+        <h5>Gender: {{empdetails.empGender}}</h5>
+        <h5>Date of Birth: {{empdetails.empDateOfBirth}}</h5>
+        <h5>Date of Joining: {{empdetails.empDateOfJoining}}</h5>
+        <h5>Phone number: {{empdetails.empPhoneNumber}}</h5>
+        <h5>Email: {{empdetails.empEmailId}}</h5>
+        <h5>Address: {{empdetails.empHomeAddrLine1}}, {{empdetails.empHomeAddrLine2}}</h5>
+        <h5>
+            {{empdetails.empHomeAddrStreet}},
+            {{empdetails.empHomeAddrDistrict}},
+            {{empdetails.empHomeAddrState}},
+            {{empdetails.empHomeAddrCountry}}
+        </h5>
+        <h5>{{empdetails.empHomeAddrPinCode}}</h5>
+    </div>
+
+    <div class="employee">
+        <div class="emp-data">
+            <img src="assets/avatar.png">
+            <p>Employee ID: {{empdetails.id}}</p>
+        </div>
+    </div>
+
+    <div class="edit-button-container">
+        <button [routerLink]="['/employee', empdetails.id, 'edit']">
+            <span class="material-symbols-outlined"> edit_square </span>
+        </button>
+    </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div class="homemain">
+    <div class="search-container">
+        <input class="search"
+               type="text"
+               name="fname"
+               placeholder="Search">
+    </div>
+    <div class="employee">
+        <div class="emp-data"
+             *ngFor="let person of employees$ | async"
+             [routerLink]="['/employee', person.id]">
+            <img src="assets/avatar.png"
+                 class="avatar">
+            <p class="name">{{person?.empFirstName}} {{person?.empLastName}}</p>
+        </div>
+
+    </div>
+</div>
+<div class="addbutton-container">
+    <button [routerLink]="['/add']">
+        <span class="material-symbols-outlined"> add </span>
+    </button>
+</div>

@@ -1,0 +1,113 @@
+<div class="addmain"
+     [formGroup]="empForm">
+    <div class="addmainleft">
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Firstname"
+                   formControlName="empFirstName">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="Lastname"
+                   formControlName="empLastName">
+
+        </div>
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Gender"
+                   formControlName="empGender">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="Date of Birth"
+                   formControlName="empDateOfBirth">
+
+        </div>
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Phone number"
+                   formControlName="empPhoneNumber">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="Email"
+                   formControlName="empEmailId">
+        </div>
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Date of Joining"
+                   formControlName="empDateOfJoining">
+        </div>
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Address Line 1"
+                   formControlName="empHomeAddrLine1">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="Address Line 2"
+                   formControlName="empHomeAddrLine2">
+        </div>
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Street"
+                   formControlName="empHomeAddrStreet">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="District"
+                   formControlName="empHomeAddrDistrict">
+        </div>
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="State"
+                   formControlName="empHomeAddrState">
+
+            <input type="text"
+                   name="fname"
+                   placeholder="country"
+                   formControlName="empHomeAddrCountry">
+        </div>
+
+        <div class="row">
+            <input type="text"
+                   name="fname"
+                   placeholder="Pincode"
+                   formControlName="empHomeAddrPinCode">
+        </div>
+
+
+    </div>
+    <div class="rightsection">
+        <div class="emp-data-container">
+            <div class="profilepicture">
+                <p>Add Image Here</p>
+            </div>
+            <div class="row">
+                <input type="text"
+                       name="fname"
+                       placeholder="Employee ID"
+                       formControlName="id">
+            </div>
+        </div>
+
+        <div class="buttonsection">
+            <button class="savebutton"
+                    [disabled]="!empForm.valid"
+                    (click)="saveDetails()">SAVE</button>
+                    
+        </div>
+    </div>
+</div>
